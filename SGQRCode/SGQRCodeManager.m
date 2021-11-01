@@ -441,9 +441,10 @@ void soundCompleteCallback(SystemSoundID soundID, void *clientData){}
     [_tempController presentViewController:imagePicker animated:YES completion:nil];
 }
 - (NSString *)_canSetSessionPreset {
-    if ([self.session canSetSessionPreset:AVCaptureSessionPreset3840x2160]) {
-        return AVCaptureSessionPreset3840x2160;
-    } else if ([self.session canSetSessionPreset:AVCaptureSessionPreset1920x1080]) {
+    // if ([self.session canSetSessionPreset:AVCaptureSessionPreset3840x2160]) {
+    //     return AVCaptureSessionPreset3840x2160;
+    // } else 
+    if ([self.session canSetSessionPreset:AVCaptureSessionPreset1920x1080]) {
         return AVCaptureSessionPreset1920x1080;
     } else if ([self.session canSetSessionPreset:AVCaptureSessionPreset1280x720]) {
         return AVCaptureSessionPreset1280x720;
